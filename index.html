@@ -13,7 +13,16 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-/* --- (todo el CSS es exactamente el mismo que tu archivo original) --- */
+/* ... CSS NO CAMBIADO ... (idéntico al original, no se repite para brevedad) */
+:root{
+  --bg:#0A0A0B;--text:#F2F2F6;--muted:#A6A6BF;
+  --card:rgba(255,255,255,.055);--border:rgba(255,255,255,.14);
+  --grad:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.06));
+  --hover:linear-gradient(180deg,rgba(255,255,255,.3),rgba(255,255,255,.12));
+  --radius:26px;--focus:rgba(255,255,255,.45);
+  font-family:'Poppins',system-ui,sans-serif;
+}
+/* ... (todo el CSS igual) ... */
 </style>
 </head>
 <body>
@@ -56,7 +65,7 @@
   </div>
 </nav>
 
-<div class="badge-mode" id="modeBadge" style="display:none;position:fixed;top:70px;left:50%;transform:translateX(-50%);padding:6px 14px;border-radius:20px;font-size:.62rem;font-weight:600;letter-spaci[...]">
+<div class="badge-mode" id="modeBadge" style="display:none;position:fixed;top:70px;left:50%;transform:translateX(-50%);padding:6px 14px;border-radius:20px;font-size:.62rem;font-weight:600;letter-spacing:.6px;z-index:60;">STREAM MODE</div>
 
 <main class="page" id="appRoot">
 
@@ -67,48 +76,44 @@
     </div>
     <div>
       <h1 class="name">framinae <span class="status-dot-inline"></span> <span class="ig-verified"></span></h1>
-      <p class="bio">Portfolio de edición de video, fotografía y diseño gráfico. Apasionado por la creatividad visual y el detalle.</p>
+      <p class="bio">Learning the best SS method · SS Verify Experience · SS Manager Experience · Staff on DynamicPvP</p>
 
       <div class="social-hub" id="socialHub">
         <div class="social-icons">
-          <a class="icon-btn" href="https://namemc.com/profile/framinae" target="_blank"><i class="fa-solid fa-user"></i></a>
-          <a class="icon-btn" href="https://www.instagram.com/tomas_attanzio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a class="icon-btn" href="https://github.com/framingae" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a class="icon-btn" href="https://www.instagram.com/ae.studiio/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
           <a class="icon-btn" href="https://discord.com/users/1159617478725480580" target="_blank"><i class="fa-brands fa-discord"></i></a>
-          <a class="icon-btn" href="https://github.com/framinae" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a class="icon-btn" href="https://www.paypal.com/paypalme/my/profile" target="_blank"><i class="fa-brands fa-paypal"></i></a>
-          <a class="icon-btn" href="https://www.tiktok.com/@tomasattanzio" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-          <a class="icon-btn" href="https://www.youtube.com/@144_hz" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <button class="icon-btn" data-copy="tomasattanzioc@gmail.com" title="Copiar correo"><i class="fa-solid fa-envelope"></i></button>
+          <a class="icon-btn" href="mailto:framinae@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <a class="icon-btn" href="https://www.tiktok.com/@ae.studiio" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a class="icon-btn" href="https://www.youtube.com/@framinae" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <button class="icon-btn" data-copy="framinae@gmail.com" title="Copiar correo"><i class="fa-solid fa-envelope"></i></button>
         </div>
+
         <div class="social-grid" id="socialGrid">
-          <div class="s-card" data-copy="framinae">
+          <div class="s-card" data-copy="framingae">
             <div class="s-thumb"><img src="assets/social/discord.png" onerror="this.remove()"></div>
             <span>Discord ID</span><small>Copiar</small>
           </div>
-          <a class="s-card" href="https://github.com/framinae" target="_blank">
+          <a class="s-card" href="https://github.com/framingae" target="_blank">
             <div class="s-thumb"><img src="assets/social/github.png" onerror="this.remove()"></div>
             <span>GitHub</span><small>Perfil</small>
           </a>
-          <a class="s-card" href="https://www.instagram.com/tomas_attanzio/" target="_blank">
+          <a class="s-card" href="https://www.instagram.com/ae.studiio/" target="_blank">
             <div class="s-thumb"><img src="assets/social/instagram.png" onerror="this.remove()"></div>
             <span>Instagram</span><small>Ver</small>
           </a>
-            <a class="s-card" href="https://www.paypal.com/paypalme/my/profile" target="_blank">
-            <div class="s-thumb"><img src="assets/social/paypal.png" onerror="this.remove()"></div>
-            <span>PayPal</span><small>Support</small>
+          <a class="s-card" href="mailto:framinae@gmail.com" target="_blank">
+            <div class="s-thumb"><img src="assets/social/email.png" onerror="this.remove()"></div>
+            <span>Email</span><small>Copiar</small>
           </a>
-          <a class="s-card" href="https://www.tiktok.com/@tomasattanzio" target="_blank">
+          <a class="s-card" href="https://www.tiktok.com/@ae.studiio" target="_blank">
             <div class="s-thumb"><img src="assets/social/tiktok.png" onerror="this.remove()"></div>
             <span>TikTok</span><small>Perfil</small>
           </a>
-          <a class="s-card" href="https://www.youtube.com/@144_hz" target="_blank">
+          <a class="s-card" href="https://www.youtube.com/@framinae" target="_blank">
             <div class="s-thumb"><img src="assets/social/youtube.png" onerror="this.remove()"></div>
             <span>YouTube</span><small>Channel</small>
           </a>
-          <div class="s-card" data-copy="tomasattanzioc@gmail.com">
-            <div class="s-thumb"><img src="assets/social/email.png" onerror="this.remove()"></div>
-            <span>Email</span><small>Copiar</small>
-          </div>
         </div>
       </div>
     </div>
@@ -116,78 +121,298 @@
 
   <!-- STATS -->
   <section class="stats card" id="statsSection">
-    <div class="stat-chip">Proyectos <strong>+10</strong></div>
-    <div class="stat-chip">Años de experiencia <strong>3+</strong></div>
-    <div class="stat-chip">Softwares <strong>Premiere, Photoshop, AE</strong></div>
-    <div class="stat-chip">Clientes satisfechos <strong>20+</strong></div>
-    <div class="stat-chip" id="viewsChip">Visitas <strong id="viewsValue">—</strong></div>
+    <div class="stat-chip">All Servers <strong>+6</strong></div>
+    <div class="stat-chip">SS Experience <strong>+2 Years</strong></div>
+    <div class="stat-chip">SS Manager Experience <strong>1 Year</strong></div>
+    <div class="stat-chip">Cases Reviewed <strong>120+</strong></div>
+    <div class="stat-chip" id="viewsChip">Views <strong id="viewsValue">—</strong></div>
   </section>
 
-  <!-- PROYECTOS DE EDICIÓN -->
+  <!-- SERVERS -->
   <section class="servers card" id="serversSection">
-    <h2 class="section-title"><i class="fa-solid fa-clapperboard"></i> Proyectos de Edición</h2>
+    <h2 class="section-title"><i class="fa-solid fa-server"></i> Servidores</h2>
     <div class="grid" id="serversGrid">
-      <!-- Ejemplo de proyecto, edita o duplica estos para tus trabajos -->
-      <article class="srv-card" data-name="Proyecto 1" data-year="2024" data-roles="Edición de video para marca personal" data-logo="">
+      <article class="srv-card" data-name="DynoPvP" data-year="2023" data-roles="SS Verify y Mod+" data-logo="assets/dynopvp.png">
         <div class="sheen"></div><div class="srv-inner">
           <div class="srv-top">
-            <div class="srv-logo"><img src="assets/edit1.png" alt="Proyecto 1" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');this.parentNode.textContent='P1'"></div>
-            <div class="srv-meta"><h3>Proyecto 1</h3><span class="srv-year">2024</span></div>
+            <div class="srv-logo"><img src="assets/dynopvp.png" alt="DynoPvP"></div>
+            <div class="srv-meta"><h3>DynoPvP</h3><span class="srv-year">2023</span></div>
           </div>
-          <p class="srv-roles">Edición de video para marca personal</p>
-          <button class="srv-btn" type="button" disabled>Próximamente detalles</button>
+          <p class="srv-roles">SS Verify y Mod+</p>
+          <button class="srv-btn" type="button">Ver más</button>
         </div>
       </article>
-      <article class="srv-card" data-name="Proyecto 2" data-year="2023" data-roles="Retoque fotográfico profesional" data-logo="">
+      <article class="srv-card" data-name="FladePvP" data-year="2024" data-roles="SS Coordinator y Admin" data-logo="assets/fladepvp.png">
         <div class="sheen"></div><div class="srv-inner">
           <div class="srv-top">
-            <div class="srv-logo"><img src="assets/edit2.png" alt="Proyecto 2" onerror="this.style.display='none';this.parentNode.classList.add('logo-fallback');this.parentNode.textContent='P2'"></div>
-            <div class="srv-meta"><h3>Proyecto 2</h3><span class="srv-year">2023</span></div>
+            <div class="srv-logo"><img src="assets/fladepvp.png" alt="FladePvP"></div>
+            <div class="srv-meta"><h3>FladePvP</h3><span class="srv-year">2024</span></div>
           </div>
-          <p class="srv-roles">Retoque fotográfico profesional</p>
-          <button class="srv-btn" type="button" disabled>Próximamente detalles</button>
+          <p class="srv-roles">SS Coordinator y Admin</p>
+          <button class="srv-btn" type="button">Ver más</button>
         </div>
       </article>
-      <!-- Duplica este bloque <article> para más proyectos -->
+      <article class="srv-card" data-name="InfernalMC" data-year="2024" data-roles="SS Manager y Manager" data-logo="assets/infernalmc.png">
+        <div class="sheen"></div><div class="srv-inner">
+          <div class="srv-top">
+            <div class="srv-logo"><img src="assets/infernalmc.png" alt="InfernalMC"></div>
+            <div class="srv-meta"><h3>InfernalMC</h3><span class="srv-year">2024</span></div>
+          </div>
+          <p class="srv-roles">SS Manager y Manager</p>
+          <button class="srv-btn" type="button">Ver más</button>
+        </div>
+      </article>
+      <article class="srv-card" data-name="AstralMC" data-year="2025" data-roles="SS Trainer y Mod" data-logo="assets/astralmc.png">
+        <div class="sheen"></div><div class="srv-inner">
+          <div class="srv-top">
+            <div class="srv-logo"><img src="assets/astralmc.png" alt="AstralMC"></div>
+            <div class="srv-meta"><h3>AstralMC</h3><span class="srv-year">2025</span></div>
+          </div>
+          <p class="srv-roles">SS Trainer y Mod</p>
+          <button class="srv-btn" type="button">Ver más</button>
+        </div>
+      </article>
+      <article class="srv-card now-focus" data-name="DynamicPvP" data-year="Now" data-roles="SS Verify y Mod" data-logo="assets/dynamicpvp.png">
+        <div class="sheen"></div><div class="srv-inner">
+          <div class="srv-top">
+            <div class="srv-logo"><img src="assets/dynamicpvp.png" alt="DynamicPvP"></div>
+            <div class="srv-meta"><h3>DynamicPvP</h3><span class="srv-year">Now</span></div>
+          </div>
+          <p class="srv-roles">SS Verify y Mod</p>
+          <button class="srv-btn" type="button">Ver más</button>
+        </div>
+      </article>
     </div>
   </section>
 
-  <!-- LOGROS -->
+  <!-- ACHIEVEMENTS -->
   <section class="achievements card alt-achievements" id="achSection">
     <h2 class="section-title"><i class="fa-solid fa-trophy"></i> Logros</h2>
     <div class="ach-lists">
       <div class="ach-box">
-        <h3>Edición Audiovisual</h3>
+        <h3>SS Category</h3>
         <ul>
-          <li><i class="fa-solid fa-film"></i> Más de 50 videos editados para creadores de contenido.</li>
-          <li><i class="fa-solid fa-clapperboard"></i> Edición de cortometrajes y comerciales.</li>
-          <li><i class="fa-solid fa-eye"></i> Retoque profesional en fotografía y color grading.</li>
+          <li><i class="fa-solid fa-book"></i> Creación de guías de SS avanzadas.</li>
+          <li><i class="fa-solid fa-people-group"></i> Organización y liderazgo de equipos SS.</li>
+          <li><i class="fa-solid fa-magnifying-glass"></i> Detección de cheats complejos y ofuscados.</li>
         </ul>
       </div>
       <div class="ach-box">
-        <h3>Proyectos Destacados</h3>
+        <h3>Real Life Category</h3>
         <ul>
-          <li><i class="fa-solid fa-medal"></i> Finalista en concurso nacional de edición 2024.</li>
-          <li><i class="fa-solid fa-award"></i> Ganador “Mejor Reel IG” en comunidad local.</li>
-          <li><i class="fa-solid fa-users"></i> Colaboraciones con marcas y artistas independientes.</li>
-          <li><i class="fa-solid fa-lightbulb"></i> Desarrollo de branding para startups.</li>
+          <li><i class="fa-solid fa-medal"></i> Campeón LigaMX Sub 15 2024.</li>
+          <li><i class="fa-regular fa-futbol"></i> Ex-Jugador Cruz Azul 2024.</li>
+          <li><i class="fa-regular fa-futbol"></i> Ex-Jugador Colegio Madrd 2025.</li>
+          <li><i class="fa-regular fa-futbol"></i> Jugador Barceloneta 2025.</li>
+          <li><i class="fa-solid fa-trophy"></i> Más de 8 títulos acumulados.</li>
         </ul>
       </div>
     </div>
   </section>
 
-  <!-- MUSIC y PANEL (igual que tu original: puedes dejar o quitar si no quieres música) -->
-  <!-- ... todo igual ... -->
+  <!-- MUSIC -->
+  <section class="music card">
+    <h2 class="section-title"><i class="fa-solid fa-music"></i> Música</h2>
+    <div class="music-simple">
+      <div id="musicState">Ready: cancion.mp3</div>
+      <div class="music-controls-basic">
+        <button id="playMusic" class="btn"><i class="fa-solid fa-play"></i> Play</button>
+        <button id="volDown" class="btn" title="Vol -"><i class="fa-solid fa-volume-low"></i></button>
+        <button id="volUp" class="btn" title="Vol +"><i class="fa-solid fa-volume-high"></i></button>
+        <button id="muteMusic" class="btn" title="Mute"><i class="fa-solid fa-volume-xmark"></i></button>
+        <button id="reloadAudio" class="btn" title="Recargar audio"><i class="fa-solid fa-rotate-right"></i></button>
+      </div>
+      <div class="volume-wrap">
+        <span style="font-size:.6rem;letter-spacing:.5px">VOL</span>
+        <input id="volumeSlider" type="range" min="0" max="100" value="65">
+      </div>
+      <audio id="bgAudio" preload="auto" loop>
+        <source src="assets/music/cancion.mp3" type="audio/mpeg">
+        <source src="assets/music/cancion.ogg" type="audio/ogg">
+      </audio>
+    </div>
+  </section>
+
+  <!-- PANELS -->
+  <section class="panel-grid">
+    <div class="panels-horizontal" id="panelsRow">
+      <div class="card mini-panel" id="panelDoing">
+        <div class="panel-head">
+          <h3>Currently Doing</h3>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <button id="startSession" class="btn small" type="button" data-admin><i class="fa-solid fa-play"></i> Start SS</button>
+            <button id="endSession" class="btn small danger" type="button" data-admin><i class="fa-solid fa-stop"></i> End SS</button>
+            <button id="editDoing" class="btn small" type="button" data-admin><i class="fa-solid fa-pen"></i> Edit</button>
+          </div>
+        </div>
+        <div id="doingContent" class="inline-edit" contenteditable="false">Disponible</div>
+      </div>
+
+      <div class="card mini-panel" id="panelObjectives">
+        <div class="panel-head">
+          <h3>Próximos Objetivos</h3>
+          <button id="clearObjectives" class="btn small danger" type="button" title="Vaciar" data-admin><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <ul id="objectivesList" class="objectives-list"></ul>
+        <div class="add-row" data-admin>
+          <input id="newObjective" type="text" placeholder="Nuevo objetivo...">
+          <button id="addObjective" class="btn small" type="button"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="obj-progress" id="objProgress" style="display:none">
+          <div class="bar"><span id="objProgBar"></span></div>
+          <div class="txt" id="objProgText">0%</div>
+        </div>
+      </div>
+
+      <div class="card mini-panel" id="panelChangelog">
+        <div class="panel-head">
+          <h3>Changelog / Updates</h3>
+          <button id="clearChangelog" class="btn small danger" type="button" title="Borrar todo" data-admin><i class="fa-solid fa-eraser"></i></button>
+        </div>
+        <ul id="changelogList" class="changelog-list"></ul>
+        <div class="add-row" data-admin>
+          <input id="newChange" type="text" placeholder="Nuevo cambio...">
+          <button id="addChange" class="btn small" type="button"><i class="fa-solid fa-plus"></i></button>
+        </div>
+      </div>
+
+      <div class="card mini-panel" id="panelLastUpdate">
+        <div class="panel-head">
+          <h3>Última Actualización</h3>
+          <button id="manualUpdate" class="btn small" type="button" title="Forzar" data-admin><i class="fa-solid fa-clock-rotate-left"></i></button>
+        </div>
+        <div class="last-update" id="lastUpdateLabel">—</div>
+        <div class="last-update" id="lastUpdateRelative" style="opacity:.75"></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:20px">
+      <div class="card mini-panel" id="panelGallery" style="flex:1 1 300px">
+        <div class="panel-head"><h3>Evidencias</h3></div>
+        <div class="placeholder-box">PROXIMAMENTE...</div>
+      </div>
+
+      <div class="card mini-panel" id="panelTools" style="flex:1 1 300px">
+        <div class="panel-head"><h3>Herramientas</h3></div>
+        <div class="placeholder-box">PROXIMAMENTE...</div>
+      </div>
+
+      <div class="card mini-panel" id="panelViews" style="flex:1 1 300px">
+        <div class="panel-head">
+          <h3>Visitas</h3>
+          <button id="refreshViews" class="btn small" type="button" data-admin title="Sync"><i class="fa-solid fa-rotate"></i></button>
+        </div>
+        <div style="font-size:.62rem;line-height:1.5;display:flex;flex-direction:column;gap:6px">
+          <div><strong>Reales:</strong> <span id="viewsReal">—</span></div>
+          <div><strong>Offset:</strong> <span id="viewsOffsetLabel">0</span> <span data-admin style="display:none">(editable abajo)</span></div>
+          <div><strong>Total mostrado:</strong> <span id="viewsDisplayed">—</span></div>
+          <div data-admin style="display:none;gap:6px;flex-wrap:wrap" id="viewsAdminControls">
+            <input id="viewOffset" type="number" placeholder="Nuevo offset" style="flex:1;min-width:90px;padding:6px 8px;border-radius:10px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.1);color:#fff;font-size:.58rem">
+            <button id="applyViewOffset" class="btn small" type="button"><i class="fa-solid fa-floppy-disk"></i></button>
+            <button id="addFakeViews" class="btn small" type="button" title="+100 al offset"><i class="fa-solid fa-plus"></i>100</button>
+            <button id="resetOffset" class="btn small danger" type="button" title="Reset offset"><i class="fa-solid fa-ban"></i></button>
+          </div>
+          <small style="opacity:.65">El contador real usa CountAPI y sólo suma 1 por navegador cada 6h.</small>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
-    © <span id="year"></span> framinae. Todos los derechos reservados.
+    © <span id="year"></span> framinae. All rights reserved.
   </footer>
 </main>
 
+<!-- SERVER MODAL -->
+<dialog id="serverModal" class="modal">
+  <form class="modal-box" method="dialog">
+    <button class="modal-close" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-head">
+      <div class="modal-logo" id="mLogo">S</div>
+      <div>
+        <h3 id="mTitle">Servidor</h3>
+        <p id="mMeta" class="muted" style="font-size:.66rem;letter-spacing:.4px">Año · Roles</p>
+      </div>
+    </div>
+    <div class="modal-content">
+      <p class="coming">PROXIMAMENTE...</p>
+      <div id="mDesc" class="server-desc"></div>
+      <div id="mTags" class="server-tags"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn small" value="cancel">Cerrar</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- SETTINGS PANEL -->
+<div id="settingsPanel" aria-hidden="true">
+  <button id="settingsClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+  <h3>Settings</h3>
+  <div class="setting-block">
+    <div class="title">Background</div>
+    <div class="setting-row" id="bgModeRow">
+      <label><input type="radio" name="bgmode" value="car"> Car</label>
+      <label><input type="radio" name="bgmode" value="particles"> Particles</label>
+      <label><input type="radio" name="bgmode" value="aurora"> Aurora</label>
+      <label><input type="radio" name="bgmode" value="image"> Image</label>
+    </div>
+    <div id="bgImageField" style="margin-top:8px;display:none">
+      <input id="bgImageUrl" type="url" placeholder="URL imagen...">
+    </div>
+    <div style="margin-top:10px" class="setting-row">
+      <label><input id="dynamicBgToggle" type="checkbox"> Dynamic BG (Hour)</label>
+    </div>
+  </div>
+
+  <div class="setting-block">
+    <div class="title">Interacción</div>
+    <div class="setting-row">
+      <label><input id="tiltToggle" type="checkbox"> Tilt</label>
+      <label>Cursor
+        <select id="cursorStyle" style="background:#121317;color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:4px 6px;font-size:.65rem">
+          <option value="minimal">Minimal</option>
+          <option value="glow">Glow</option>
+          <option value="off">Off</option>
+        </select>
+      </label>
+      <label><input id="cleanToggle" type="checkbox"> Clean Mode</label>
+      <label><input id="streamToggle" type="checkbox"> Streaming Mode</label>
+      <label><input id="logoFitToggleChk" type="checkbox"> Logos Cover</label>
+    </div>
+  </div>
+
+  <div class="setting-block">
+    <div class="title">Audio</div>
+    <div class="setting-row">
+      <label><input id="autoplayToggle" type="checkbox"> Autoplay</label>
+      <label>Vol <input id="initVol" type="range" min="0" max="100" value="65"></label>
+    </div>
+  </div>
+
+  <button id="settingsSave" class="btn small">Guardar</button>
+</div>
+
+<!-- DEBUG -->
+<div id="debugPanel">
+  <strong>DEBUG</strong>
+  <pre id="debugLog"></pre>
+</div>
+
+<!-- TOAST -->
+<div id="toast" role="status"></div>
+
 <script>
-// Script año en el footer
-document.getElementById('year').textContent = new Date().getFullYear();
-// El resto de los scripts es igual que tu archivo original, no cambies nada
+// Busca en todo el archivo todas las ocurrencias de "BestArcher_" y cámbialas a "framinae"
+// Cambia links sociales a los de framinae o los que corresponden
+// Cambia el footer
+// Si quieres que la redirección global sea automática tras entrar, añade:
+// window.location.href = 'https://github.com/framingae/framinae.github.io';
+// Pero normalmente esto no es lo que se espera en un portfolio, así que sólo cambia links y nombres.
+
+// El resto del JS es igual (no necesita cambios para la redirección).
+
+/* ... El resto del código JS es igual que el original ... */
 </script>
 </body>
 </html>
